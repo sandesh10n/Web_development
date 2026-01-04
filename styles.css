@@ -1,0 +1,37 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height: 1.5; color: #0b1321; background: #f6f8fb; }
+
+.container { max-width: 900px; margin: 0 auto; padding: 1rem; }
+
+.site-header { background: linear-gradient(90deg,#2b6cb0,#3182ce); color: #fff; padding: 2rem 0; }
+.site-header .tagline { opacity: 0.95; margin-top: 0.25rem; }
+.nav { list-style: none; display: flex; gap: 1rem; margin-top: 0.75rem; }
+.nav a { color: rgba(255,255,255,0.95); text-decoration: none; padding: 0.25rem 0.5rem; border-radius: 6px; }
+.nav a:hover { background: rgba(255,255,255,0.08); }
+
+main { padding: 2rem 0; }
+section { margin-bottom: 1.5rem; background: #fff; border-radius: 10px; padding: 1rem; box-shadow: 0 6px 18px rgba(12,18,28,0.06); }
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+p, li { color: #23303b; }
+ul { padding-left: 1.25rem; }
+
+.contact-form { display: grid; gap: 0.5rem; }
+.contact-form label { display: flex; flex-direction: column; font-size: 0.95rem; }
+.contact-form input, .contact-form textarea { margin-top: 0.35rem; padding: 0.5rem 0.6rem; border: 1px solid #d6e0ea; border-radius: 6px; background: #fbfdff; }
+.contact-form button { margin-top: 0.5rem; background: #2b6cb0; color: #fff; border: none; padding: 0.6rem 0.9rem; border-radius: 8px; cursor: pointer; }
+.contact-form button:hover { background: #265a9a; }
+
+.site-footer { text-align: center; padding: 1rem 0; margin-top: 1rem; color: #64748b; }
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .nav { flex-wrap: wrap; }
+  .container { padding: 0.8rem; }
+  h1 { font-size: 1.3rem; }
+}
+
+/* Utility */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }

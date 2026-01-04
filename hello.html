@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <fieldset>
+        
+    <form action="action/php" method = "post">
+        <label for="first-name">First Name:</label>
+        <input type ="text" name = "inputbox" id = "first-name">
+        <input type = "submit" value = "Submit">
+        <input type = "reset" value ="Reset">
+        <legend> Contact Details</legend>
+        <label> Email Adress: <input type = "email" name ="email" </label>
+        <label> Phone Number: <input type = "text" name = "phone-number" </label>
+        <input type="button" name="button" value="click" onclick="testresults(this.form)">
+        <input type = "button" name=""button2" value = "write" onclick = "writetext(this.form)">
+        <input type = "text" name=""button2" value = "write" onclick = "writetext(this.form)">
+        
+        
+    </form>
+</fieldset>
+<script language = "javascript">
+        function testresults(form){
+            var testvar = form.inputbox.value;
+            alert("you typed:" + testvar);
+                }
+        function readtext(form){
+            testvar = form.inputbox.value;  
+            alert("you typed" + testvar)
+        }
+        function writetext(form){
+            form.inputbox.value = "have a nice day !"
+        }
+    </script>
+</body>
+</html>
